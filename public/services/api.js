@@ -1,19 +1,19 @@
-const API_KEY = 'http://localhost:3001';
+const BASE_URL = 'http://localhost:3001';
 
-export const api_KEY = {
+export const api = {
     async getUsers() {
-        const response = await fetch(`${API_KEY}/users`);
+        const response = await fetch(`${BASE_URL}/users`);
         return response.json();
     },
 
     async getUserByEmail(email) {
-        const response = await fetch(`${API_KEY}/users  ?email=${email}`);
+        const response = await fetch(`${BASE_URL}/users?email=${email}`);
         const users = await response.json();
         return users[0] || null;
     },
 
     async createUser(userData) {
-        const response = await fetch(`${API_KEY}/users`, {
+        const response = await fetch(`${BASE_URL}/users`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -28,7 +28,7 @@ export const api_KEY = {
     },
 
     async updateUser(id, userData) {
-        const response = await fetch(`${API_KEY}/users/${id}`, {
+        const response = await fetch(`${BASE_URL}/users/${id}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(userData)
@@ -37,22 +37,22 @@ export const api_KEY = {
     },
 
     async getTasks() {
-        const response = await fetch(`${API_KEY}/tasks`);
+        const response = await fetch(`${BASE_URL}/tasks`);
         return response.json();
     },
 
     async getTasksByUser(userId) {
-        const response = await fetch(`${API_KEY}/tasks?userId=${userId}`);
+        const response = await fetch(`${BASE_URL}/tasks?userId=${userId}`);
         return response.json();
     },
 
     async getTaskById(id) {
-        const response = await fetch(`${API_KEY}/tasks/${id}`);
+        const response = await fetch(`${BASE_URL}/tasks/${id}`);
         return response.json();
     },
 
     async createTask(taskData) {
-        const response = await fetch(`${API_KEY}/tasks`, {
+        const response = await fetch(`${BASE_URL}/tasks`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -64,7 +64,7 @@ export const api_KEY = {
     },
 
     async updateTask(id, taskData) {
-        const response = await fetch(`${API_KEY}/tasks/${id}`, {
+        const response = await fetch(`${BASE_URL}/tasks/${id}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(taskData)
@@ -73,7 +73,7 @@ export const api_KEY = {
     },
 
     async deleteTask(id) {
-        const response = await fetch(`${API_KEY}/tasks/${id}`, {
+        const response = await fetch(`${BASE_URL}/tasks/${id}`, {
             method: 'DELETE'
         });
         return response.json();

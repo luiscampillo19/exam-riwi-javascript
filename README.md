@@ -39,4 +39,4 @@ CRUDZASO is not just a task manager; it is a robust **SPA (Single Page Applicati
 
 1. **Clone and Access:**
    ```bash
-   git clone
+   git clone https://github.com/LuisCampillo19/exam-riwi-javascript.git
