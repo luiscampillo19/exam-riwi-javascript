@@ -1,0 +1,99 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Luis Campillo",
+      "email": "admin@riwi.io",
+      "password": "admin123",
+      "role": "admin",
+      "jobTitle": "Technical leader",
+      "avatar": "AM",
+      "createdAt": "2024-01-010T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Felipe Torres",
+      "email": "felipe@riwi.io",
+      "password": "usuario19",
+      "role": "user",
+      "jobTitle": "Developer Backend",
+      "avatar": "SL",
+      "createdAt": "2024-01-05T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "name": "Gabriel Sanchez",
+      "email": "gaba@riwi.io",
+      "password": "usuario19",
+      "role": "user",
+      "jobTitle": "Developer Frontend",
+      "avatar": "RP",
+      "createdAt": "2024-01-08T00:00:00.000Z"
+    },
+    {
+      "name": "Camilo Estrada",
+      "email": "cami@riwi.io",
+      "password": "123456",
+      "role": "user",
+      "avatar": "CE",
+      "jobTitle": "User",
+      "createdAt": "2026-02-02T18:05:21.830Z",
+      "id": 4
+    },
+    {
+      "name": "Camilo Estrada",
+      "email": "cami@riwi.io",
+      "password": "123456",
+      "role": "user",
+      "avatar": "CE",
+      "jobTitle": "User",
+      "createdAt": "2026-02-02T18:05:22.697Z",
+      "id": 5
+    },
+    {
+      "name": "Camilo Estrada",
+      "email": "luis@demo.com",
+      "password": "123456",
+      "role": "user",
+      "avatar": "CE",
+      "jobTitle": "User",
+      "createdAt": "2026-02-02T18:05:47.100Z",
+      "id": 6
+    }
+  ],
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Update Documentation",
+      "description": "Centrar un div",
+      "status": "in progress",
+      "priority": "high",
+      "userId": 3,
+      "assignee": "Gabriel Sanchez",
+      "createdAt": "2023-10-20T10:00:00.000Z",
+      "dueDate": "2023-10-24"
+    },
+    {
+      "id": 2,
+      "title": "Fix Login Authentication",
+      "description": "Problema cuando se carga la foto de perfil al registrarse",
+      "status": "pending",
+      "priority": "high",
+      "userId": 3,
+      "assignee": "Gabriel Sanchez",
+      "createdAt": "2023-10-21T09:00:00.000Z",
+      "dueDate": "2023-10-22"
+    },
+    {
+      "id": 3,
+      "title": "Quarterly Review",
+      "description": "Completar la estructura de datos",
+      "status": "completed",
+      "priority": "low",
+      "userId": 2,
+      "assignee": "Felipe Torres",
+      "createdAt": "2023-10-15T14:00:00.000Z",
+      "dueDate": "2023-10-20"
+    }
+  ]
+}
